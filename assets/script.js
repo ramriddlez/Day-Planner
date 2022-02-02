@@ -7,13 +7,10 @@ $('#currentDay').text(today);
 
 // get variable for the div
 
-var divE1 = document.querySelector('col-8')
+var userClicked = $(this).parent().attr('id');
 
-console.log(divE1);
-
-//for (let i = 9; i< 18; i++) {
-
-   //let array = ['9','10','11','12','13','14','15','16','17',];
+for (let i = 9; i< 18; i++) {
+    let array = ['9','10','11','12','13','14','15','16','17',];
    
   // console.log(i);
 //get the actual value from now(hour)
@@ -24,14 +21,12 @@ console.log(divE1);
     //id=9
     //now===id
   
-//      if (now === (i)) {
-//         divE1.setAttribute("style", "background-color: #82E0AA;" ) 
-//      } else if 
-//          (now > i) {
-//         divE1.setAttribute("style", "background-color: #82E0AA;" ) 
-//      } else 
-//        (now < i)
-//        divE1.setAttribute("style", "background-color: #82E0AA;" ) 
-//     }
-
-// console.log ('ok');
+    if (now === i) {
+         userClicked.addClass('present');
+      } else if 
+         (now > i) {
+         userClicked.addClass('past');
+      } else 
+         (now < i) 
+         userClicked.addClass('future');
+};
