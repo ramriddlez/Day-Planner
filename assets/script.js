@@ -36,3 +36,10 @@ $(".saveBtn").on("click", function () {
     localStorage.setItem(time, text);
 })
 
+
+    localStorage.getItem("time");
+    localStorage.getItem("text");
+
+   
+}
+
