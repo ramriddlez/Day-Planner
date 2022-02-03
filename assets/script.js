@@ -27,6 +27,12 @@ $('#currentDay').text(today);
         }
     })
 
-//local storage 
+//local storage oon click savebtn function
     
-$()
+$(".saveBtn").on("click", function () {
+    // Get nearby values of the description in JQuery
+    var text = $(this).siblings(".description").val();
+    var time = $(this).parent().attr("id");
+    localStorage.setItem(time, text);
+})
+
