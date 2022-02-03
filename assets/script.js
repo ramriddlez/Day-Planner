@@ -12,13 +12,13 @@ $('#currentDay').text(today);
         
         var blockTime = parseInt($(this).parent().attr("id"));
         
+
         // To check the time and add the classes for background indicators
         if (blockTime < timeNow) {
 
             $(this).addClass('past');
         }
-        else if (blockTime === timeNow) {
-
+        else if (blockTime == timeNow) {
             $(this).addClass("present");
         }
         else {
