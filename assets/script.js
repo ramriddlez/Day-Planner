@@ -1,6 +1,6 @@
 
 //use moment.js to format the following variables:
-let today = moment().format("dddd, MMMM Do YYYY,");
+let today = moment().format("dddd, MMMM Do YYYY");
 let timeNow = moment().format('k');
 //this will be the time block using JQuery
 $('#currentDay').text(today);
@@ -27,4 +27,6 @@ $('#currentDay').text(today);
         }
     })
 
+//local storage 
     
+$()
