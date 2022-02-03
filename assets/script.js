@@ -37,8 +37,8 @@ $(".saveBtn").on("click", function () {
 })
 //retrieve local storage
 //
-$("#9AM .description").val(localStorage.getItem("9AM"));
-$("#10AM .description").val(localStorage.getItem("10AM"));
+$("#9 .description").val(localStorage.getItem("9"));
+$("#10 .description").val(localStorage.getItem("10"));
 $("#11 .description").val(localStorage.getItem("11"));
 $("#12 .description").val(localStorage.getItem("12"));
 $("#13 .description").val(localStorage.getItem("13"));
